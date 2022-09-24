@@ -1,38 +1,106 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Raleway&display=swap');
+body{
+  color:#04093f;
+  font-family: 'IBM Plex Serif', serif;
+  background-color: #e6e7ee;
+}
+
+.search-bar{
+  min-width: 50%;
+  text-align: center;
+  height: 40px;
+  background-color: #ffffff;
+  box-shadow: 3px 0px 5px #1a1a29;
+
+}
+.search-btn{
+  height: 41px;
+  background-color:#04093f;
+  color: #e6e7ee;
+  font-size: 14px;
+  padding: 4px 10px 2px;
+  box-shadow: 3px 0px 5px #1a1a29;
+
+}
+.search-btn:hover{
+  color: #04093f;
+  background-color: #ffffff;
+}
+.search-btn span{
+  color: #dd2c00;
+  font-weight: bold;
+}
+.card{
+  box-shadow: 3px 8px 6px 2px #1a1a29;
+  width: 290px;
+  margin-top: 3px;
+  position: relative;
+  border-radius: 5px;
+  min-height: 350px;
+  border: 1px solid #04093f;
+
+}
+.design{
+  background-color: #04093f;
+  height: 120px;
+  border-top-left-radius: 5px;
+  border-top-right-radius:5px ;
+}
+.avatar{
+  position:absolute;
+  border-radius: 50%;
+  width: 160px;
+  top: 5%;
+  left: 22%;
+
+}
+.login{
+  color: #04093f;
+  text-decoration: none;
+  margin-top: 23%;
+  position: relative;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform:capitalize;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+}
+.login:hover{
+  color: #1a237e;
+  text-decoration: 2px #dd2c00 underline;
+  text-underline-position: under;
+}
+.login span{
+  font-size: 20px;
+  align-self: center;
+  text-decoration: none;
+}
+.name{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+.created_at{
+  font-size: 8px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.repos span{
+  display: block;
+  font-size: 15px;
+  margin-left: 0;
+  font-weight: bold;
+  color: #04093f;
 }
+.repos{
+  color: #dd2c00;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notfound{
+  color: #dd2c00;
+  text-align: center;
 }
